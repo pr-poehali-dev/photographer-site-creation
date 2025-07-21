@@ -39,7 +39,8 @@ const Index = () => {
                 <span className="font-bold">Фотография</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Создаю естественные и эмоциональные портреты в студии и на природе. 
+                Создаю естественные и эмоциональные кадры: портреты, студийная съёмка, 
+                мобильные фотосессии, девичники и семейные моменты. 
                 Каждый кадр — это история, рассказанная через объектив.
               </p>
               <div className="flex gap-4">
@@ -78,18 +79,20 @@ const Index = () => {
             <div>
               <h3 className="text-4xl font-light mb-6 font-serif">О себе</h3>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Меня зовут Анна, и я профессиональный фотограф с 5-летним опытом в портретной съёмке. 
-                Специализируюсь на создании естественных и выразительных портретов.
+                Меня зовут Анна, и я профессиональный фотограф с 5-летним опытом. 
+                Специализируюсь на портретной и студийной съёмке, мобильных фотосессиях, 
+                фото-девичниках и семейных моментах.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Работаю как в студии с профессиональным оборудованием, так и на природе, 
-                используя естественное освещение для создания уникальной атмосферы.
+                Работаю в студии с профессиональным оборудованием, выезжаю на локации, 
+                создаю атмосферные кадры для особых событий и семейных праздников.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Студийная съёмка</Badge>
-                <Badge variant="secondary">Съёмка на природе</Badge>
                 <Badge variant="secondary">Портретная фотография</Badge>
-                <Badge variant="secondary">Художественные портреты</Badge>
+                <Badge variant="secondary">Студийная съёмка</Badge>
+                <Badge variant="secondary">Мобильная съёмка</Badge>
+                <Badge variant="secondary">Фото-девичник</Badge>
+                <Badge variant="secondary">Семейная съёмка</Badge>
               </div>
             </div>
           </div>
@@ -123,7 +126,20 @@ const Index = () => {
       <section id="schedule" className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6">
           <h3 className="text-4xl font-light text-center mb-12">Расписание и услуги</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="p-6">
+              <div className="flex items-start gap-4">
+                <Icon name="User" size={24} />
+                <div>
+                  <h4 className="text-xl font-semibold mb-2">Портретная съёмка</h4>
+                  <p className="text-gray-600 mb-4">
+                    Индивидуальные портреты в студии или на локации
+                  </p>
+                  <p className="text-2xl font-bold">от 4000 ₽</p>
+                  <p className="text-sm text-gray-500">60 минут / 15 обработанных фото</p>
+                </div>
+              </div>
+            </Card>
             <Card className="p-6">
               <div className="flex items-start gap-4">
                 <Icon name="Camera" size={24} />
@@ -139,14 +155,40 @@ const Index = () => {
             </Card>
             <Card className="p-6">
               <div className="flex items-start gap-4">
-                <Icon name="Trees" size={24} />
+                <Icon name="Car" size={24} />
                 <div>
-                  <h4 className="text-xl font-semibold mb-2">Съёмка на природе</h4>
+                  <h4 className="text-xl font-semibold mb-2">Мобильная съёмка</h4>
                   <p className="text-gray-600 mb-4">
-                    Естественные портреты с использованием природного освещения
+                    Выездная съёмка в любом месте города
                   </p>
                   <p className="text-2xl font-bold">от 6000 ₽</p>
                   <p className="text-sm text-gray-500">90 минут / 25 обработанных фото</p>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-6">
+              <div className="flex items-start gap-4">
+                <Icon name="Users" size={24} />
+                <div>
+                  <h4 className="text-xl font-semibold mb-2">Фото-девичник</h4>
+                  <p className="text-gray-600 mb-4">
+                    Атмосферная съёмка для компании подруг
+                  </p>
+                  <p className="text-2xl font-bold">от 8000 ₽</p>
+                  <p className="text-sm text-gray-500">120 минут / 40 обработанных фото</p>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-6">
+              <div className="flex items-start gap-4">
+                <Icon name="Heart" size={24} />
+                <div>
+                  <h4 className="text-xl font-semibold mb-2">Семейная съёмка</h4>
+                  <p className="text-gray-600 mb-4">
+                    Тёплые кадры для всей семьи
+                  </p>
+                  <p className="text-2xl font-bold">от 7000 ₽</p>
+                  <p className="text-sm text-gray-500">90 минут / 30 обработанных фото</p>
                 </div>
               </div>
             </Card>
@@ -199,8 +241,11 @@ const Index = () => {
                 <label className="block text-sm font-medium mb-2">Тип съёмки</label>
                 <select className="w-full p-2 border border-gray-300 rounded-md">
                   <option>Выберите тип съёмки</option>
+                  <option>Портретная съёмка</option>
                   <option>Студийная съёмка</option>
-                  <option>Съёмка на природе</option>
+                  <option>Мобильная съёмка</option>
+                  <option>Фото-девичник</option>
+                  <option>Семейная съёмка</option>
                 </select>
               </div>
               <div>
