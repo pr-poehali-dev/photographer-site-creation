@@ -14,7 +14,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold tracking-tight text-black font-serif">PHOTOGRAPHER</h1>
+            <h1 className="text-2xl font-bold tracking-tight text-black font-serif">anna.s.photographer</h1>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-600 hover:text-black transition-colors">О себе</a>
               <a href="#portfolio" className="text-gray-600 hover:text-black transition-colors">Портфолио</a>
