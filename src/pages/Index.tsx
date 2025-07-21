@@ -35,8 +35,8 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-6xl font-light mb-6 tracking-tight font-serif">
-                Профессиональная<br/>
-                <span className="font-bold">Фотография</span>
+                Частичка жизни<br/>
+                <span className="font-bold">в фотографии</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Создаю естественные и эмоциональные кадры: портреты, студийная съёмка, 
